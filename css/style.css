@@ -25,8 +25,8 @@ DEBUG
     height: 400px;
 }
 
-.debug .box {
-    height: 400px;
+.debug .green-box {
+    height: 600px;
 }
 
 /*----------------------
@@ -34,7 +34,7 @@ HEADER
 ----------------------*/
 header {
     background-color: #ADD8E6;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
 }
 
 /*----------------------
@@ -98,11 +98,7 @@ HEADER BOTTOM
 MAIN
 ----------------------*/
 .container {
-    padding: 35px;
-}
-
-.container:nth-of-type(even) {
-    background-color: #D3D3D3;
+    padding: 35px 0;
 }
 
 .box {
@@ -111,10 +107,6 @@ MAIN
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-}
-
-.container:nth-of-type(even) .box {
-    flex-direction: row-reverse;
 }
 
 .col-big {
@@ -127,6 +119,54 @@ MAIN
     flex-grow: 1;
 }
 
-.container:last-child .box {
+.container:nth-of-type(even) {
+    background-color: #D3D3D3;
+}
+
+.container:nth-of-type(even) .box {
+    flex-direction: row-reverse;
+}
+
+.container .green-box {
     background-color: #228B22;
+}
+
+.container:last-child {
+    background-color: #23272A;
+    padding-top: 10px;
+    border-bottom: 2px solid #D3D3D3;
+}
+
+.container:last-child .col-big {
+    background-color: #F08080;
+}  
+
+.container:last-child .col-small {
+    background-color: #20B2AA;
+    border-color: white;
+}  
+
+/*----------------------
+FOOTER
+----------------------*/
+footer {
+    background-color: #23272A;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: 2px solid #D3D3D3;
+    padding-top: 20px;
+}
+
+.footer-container {
+    background-color: #7FFFD4;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.footer-container > div {
+    background-color: #FFB6C1;
+    padding: 3px 5px;
 }
