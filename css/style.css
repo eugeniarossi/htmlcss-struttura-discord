@@ -139,11 +139,13 @@ MAIN
 
 .container:last-child .col-big {
     background-color: #F08080;
+    flex-grow: 2;
 }  
 
 .container:last-child .col-small {
     background-color: #20B2AA;
     border-color: white;
+    flex-grow: 1;
 }  
 
 /*----------------------
