@@ -17,8 +17,12 @@ COMMON
 /*----------------------
 DEBUG
 ----------------------*/
-.header-bottom .container {
+.debug .header-bottom .box {
     height: 300px;
+}
+
+.debug .container .col {
+    height: 400px;
 }
 
 /*----------------------
@@ -80,9 +84,31 @@ HEADER BOTTOM
     justify-content: center;
     align-items: center;
     padding: 40px;
-}
+}    
 
-.header-bottom > .container {
+.header-bottom > .box {
     width: 48%;
     background-color: #EE82EE;
+}
+
+/*----------------------
+MAIN
+----------------------*/
+.container {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.col-big {
+    background-color: #1E90FF;
+    flex-grow: 1.5;
+}
+
+.col-small {
+    background-color: #FFC0CB;
+    flex-grow: 1;
 }
