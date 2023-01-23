@@ -6,3 +6,52 @@ RESET
     padding: 0;
     box-sizing: border-box;
 }
+
+/*----------------------
+DEBUG
+----------------------*/
+
+
+/*----------------------
+HEADER
+----------------------*/
+.header-top {
+    background-color: #ADD8E6;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    margin: 10px;
+    display: flex;
+    width: 60%;
+}
+
+nav > .col {
+    background-color: #DAA520;
+    border: 2px dashed black;
+    padding: 5px;
+} 
+
+.logo, .login {
+    flex-grow: 1;
+}
+
+.login {
+    text-align: right;
+}
+
+.link-list {
+    flex-grow: 3;
+    
+}
+
+.link-list ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.link-list li {
+    margin: 0 5px;
+}
