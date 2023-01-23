@@ -8,15 +8,31 @@ RESET
 }
 
 /*----------------------
+COMMON
+----------------------*/
+.dashed {
+    border: 2px dashed black;
+}
+
+/*----------------------
 DEBUG
 ----------------------*/
-
+.header-bottom .container {
+    height: 300px;
+}
 
 /*----------------------
 HEADER
 ----------------------*/
-.header-top {
+header {
     background-color: #ADD8E6;
+    padding-bottom: 3px;
+}
+
+/*----------------------
+HEADER TOP
+----------------------*/
+.header-top {
     display: flex;
     justify-content: center;
 }
@@ -29,7 +45,6 @@ nav {
 
 nav > .col {
     background-color: #DAA520;
-    border: 2px dashed black;
     padding: 5px;
 } 
 
@@ -54,4 +69,20 @@ nav > .col {
 
 .link-list li {
     margin: 0 5px;
+}
+
+/*----------------------
+HEADER BOTTOM
+----------------------*/
+.header-bottom {
+    background-color: #00008B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.header-bottom > .container {
+    width: 48%;
+    background-color: #EE82EE;
 }
